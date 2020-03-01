@@ -9,13 +9,16 @@ import Fibonacci from "./components/pages/Fibo";
 import "./App.css";
 
 const App = () => (
-  <Router>
-    <Route path="/" pageComponent={<Home />} />
-    <Route path="/sum" pageComponent={<Sum />} />
-    <Route path="/multiply" pageComponent={<Multiply />} />
-    <Route path="/prime" pageComponent={<Prime />} />
-    <Route path="/fibonacci" pageComponent={<Fibonacci />} />
-  </Router>
+  <div>
+    <h1>Wecan</h1>
+    <Router>
+      <Route path="/" pageComponent={<Home />} />
+      <Route path="/sum" pageComponent={<Sum />} />
+      <Route path="/multiply" pageComponent={<Multiply />} />
+      <Route path="/prime" pageComponent={<Prime />} />
+      <Route path="/fibonacci" pageComponent={<Fibonacci />} />
+    </Router>
+  </div>
 );
 
 export default App;
