@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/muslih/wecan.svg?token=xcy95sW7HD5sTWiyy9Ey&branch=master)](https://travis-ci.com/muslih/wecan)
+[![Build Status](https://travis-ci.com/muslih/wecan.svg?token=xcy95sW8HD5sTWiyy9Ey&branch=master)](https://travis-ci.com/muslih/wecan)
 
 # Wecan Playground
 
@@ -23,7 +23,7 @@ There are four Playgrounds you can see,  just click the menu on the page
 4. Fibonacci
 
 ## Preview
-
+![preview](https://pasteboard.co/057dcab4-b4e3-42f1-8839-eb2dde2bfa32)
 
 ## Tech
 - React
