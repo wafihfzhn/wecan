@@ -13,7 +13,7 @@ const Container = ({ name, title, description, children, withBack }: Props) => {
   return (
     <div className="Container">
       {withBack && (
-        <a className="Back" href="./">
+        <a className="Back" href="/wecan">
           &#8249;
         </a>
       )}
