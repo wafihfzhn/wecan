@@ -10,7 +10,6 @@ import "./App.scss";
 
 const App = () => (
   <div className="App">
-    <h1>Wecan</h1>
     <Router>
       <Route path="/" pageComponent={<Home />} />
       <Route path="/sum" pageComponent={<Sum />} />
