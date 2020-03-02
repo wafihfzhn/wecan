@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../templates/Container";
 import primeFactors from "../../utils/primeFactors";
 import "./Home.scss";
 
@@ -32,21 +33,26 @@ const Prime = () => {
   };
 
   return (
-    <div className="Sum">
-      <h1>Find first N numba</h1>
-      <p>
-        {" "}
-        In this page, you will find first N prime number, and print the result
-      </p>
+    <Container
+      name="Prime"
+      title="Prime Number"
+      description="In this page, you will find first N prime number, and print the result"
+      withBack
+    >
       <SumForm />
-      Result:{" "}
-      {result.map((r: number, i: number) => (
-        <div className="result" key={i} style={{ display: "inline" }}>
-          {i ? ", " : ""}
-          {r}
-        </div>
-      ))}
-    </div>
+
+      <div className="Result">
+        <h3>Result:</h3>
+        <span>
+          {result.map((r: number, i: number) => (
+            <div className="result" key={i} style={{ display: "inline" }}>
+              {i ? ", " : ""}
+              {r}
+            </div>
+          ))}
+        </span>
+      </div>
+    </Container>
   );
 };
 

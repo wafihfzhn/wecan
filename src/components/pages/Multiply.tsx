@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../templates/Container";
 import multiply from "../../utils/multiply";
 import "./Home.scss";
 
@@ -30,12 +31,19 @@ const Multiply = () => {
   };
 
   return (
-    <div className="Sum">
-      <h1>Multiply X & Y</h1>
-      <p> In this page, you will Multiply X & Y, and print the result</p>
+    <Container
+      name="Multiply"
+      title="Multiply X and Y"
+      description="In this page, you will multiply X & Y, and print the result"
+      withBack
+    >
       <SumForm />
-      Result: {result}
-    </div>
+
+      <div className="Result">
+        <h3>Result:</h3>
+        <span>{" " + result}</span>
+      </div>
+    </Container>
   );
 };
 

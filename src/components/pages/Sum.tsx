@@ -33,6 +33,7 @@ const Sum = () => {
       name="Sum"
       title="Sum X and Y"
       description="In this page, you will Sum X & Y, and print the result"
+      withBack
     >
       <SumForm />
 

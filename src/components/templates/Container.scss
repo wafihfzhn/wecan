@@ -12,6 +12,22 @@
   flex-direction: column;
 }
 
+a.Back {
+  transition: 0.5s;
+  background: #fff;
+  position: absolute;
+  border: solid 1px #444;
+  color: #444;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  &:hover {
+    background: #efefef;
+  }
+}
+
 input {
   padding: 10px;
   border: solid 1px #ccc;
@@ -48,9 +64,13 @@ button {
 
   span {
     margin-top: 10px;
-    background: #ccc;
+    background: #efefef;
     padding: 15px;
     border-radius: 5px;
     font-weight: bold;
+    display: block;
+    line-height: 2em;
+    max-height: 30vh;
+    overflow: auto;
   }
 }
