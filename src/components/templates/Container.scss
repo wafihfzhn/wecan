@@ -6,4 +6,51 @@
   height: auto;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.5);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+  margin: auto auto 15px auto;
+}
+
+button {
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #00aeef;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover {
+    background: #059ad2;
+  }
+}
+
+.Result {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: solid 1px #eee;
+
+  span {
+    margin-top: 10px;
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
 }

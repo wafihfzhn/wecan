@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../templates/Container";
 import sumNumbers from "../../utils/sumNumbers";
 import "./Home.scss";
 
@@ -19,23 +20,27 @@ const Sum = () => {
 
   const SumForm = () => {
     return (
-      <div>
-        <form className="sumform" onSubmit={handleSubmit}>
-          <input type="number" name="X" placeholder="X value" autoFocus />
-          <input type="number" name="Y" placeholder="Y value" />
-          <button type="submit">Calculate</button>
-        </form>
-      </div>
+      <form className="sumform" onSubmit={handleSubmit}>
+        <input type="number" name="X" placeholder="X value" autoFocus />
+        <input type="number" name="Y" placeholder="Y value" />
+        <button type="submit">Calculate</button>
+      </form>
     );
   };
 
   return (
-    <div className="Sum">
-      <h1>Sum X & Y</h1>
-      <p> In this page, you will Sum X & Y, and print the result</p>
+    <Container
+      name="Sum"
+      title="Sum X and Y"
+      description="In this page, you will Sum X & Y, and print the result"
+    >
       <SumForm />
-      Result: {result}
-    </div>
+
+      <div className="Result">
+        <h3>Result:</h3>
+        <span>{" " + result}</span>
+      </div>
+    </Container>
   );
 };
 
