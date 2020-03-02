@@ -16,11 +16,11 @@ const App = () => (
       WECAN
     </h1>
     <Router>
-      <Route path="/" pageComponent={<Home />} />
-      <Route path="/sum" pageComponent={<Sum />} />
-      <Route path="/multiply" pageComponent={<Multiply />} />
-      <Route path="/prime" pageComponent={<Prime />} />
-      <Route path="/fibonacci" pageComponent={<Fibonacci />} />
+      <Route path="/wecan" pageComponent={<Home />} />
+      <Route path="/wecan/sum" pageComponent={<Sum />} />
+      <Route path="/wecan/multiply" pageComponent={<Multiply />} />
+      <Route path="/wecan/prime" pageComponent={<Prime />} />
+      <Route path="/wecan/fibonacci" pageComponent={<Fibonacci />} />
     </Router>
   </div>
 );

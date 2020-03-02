@@ -6,12 +6,12 @@
 ### With Docker
 - Clone this repo
 - Run `docker compose up`
-- Open localhost:3000
+- Open localhost:3000/wecan
 ### Without Docker
 - Clone this repo
 - Run `yarn install`
 - Run `yarn start`
-- Open localhost:3000
+- Open localhost:3000/wecan
 
 In case you can run this repo, you can open 
 
