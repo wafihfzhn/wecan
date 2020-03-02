@@ -15,7 +15,7 @@ describe("Renders correct routes", (): void => {
   const wrapper = mount(<App />);
   describe("home page", (): void => {
     it("should render correct component", async (): Promise<void> => {
-      await navigate("/");
+      await navigate("/wecan");
 
       wrapper.update();
       expect(wrapper.find(Home)).toHaveLength(1);
@@ -23,7 +23,7 @@ describe("Renders correct routes", (): void => {
   });
   describe("sum page", (): void => {
     it("should render correct component", async (): Promise<void> => {
-      await navigate("/sum");
+      await navigate("/wecan/sum");
 
       wrapper.update();
       expect(wrapper.find(Sum)).toHaveLength(1);
@@ -31,14 +31,14 @@ describe("Renders correct routes", (): void => {
   });
   describe("multiply page", (): void => {
     it("should render correct component", async (): Promise<void> => {
-      await navigate("/multiply");
+      await navigate("/wecan/multiply");
 
       expect(wrapper.find(Multiply)).toHaveLength(1);
     });
   });
   describe("prime page", (): void => {
     it("should render correct component", async (): Promise<void> => {
-      await navigate("/prime");
+      await navigate("/wecan/prime");
 
       wrapper.update();
       expect(wrapper.find(Prime)).toHaveLength(1);
@@ -46,7 +46,7 @@ describe("Renders correct routes", (): void => {
   });
   describe("fibonacci page", (): void => {
     it("should render correct component", async (): Promise<void> => {
-      await navigate("/fibonacci");
+      await navigate("/wecan/fibonacci");
 
       wrapper.update();
       expect(wrapper.find(Fibonacci)).toHaveLength(1);

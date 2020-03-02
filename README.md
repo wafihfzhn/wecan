@@ -13,7 +13,7 @@
 - Run `yarn start`
 - Open localhost:3000/wecan
 
-In case you can run this repo, you can open 
+In case you can not run this repo in development, you can open 
 
 ## How To Use
 There are four Playgrounds you can see,  just click the menu on the page
