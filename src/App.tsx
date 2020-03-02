@@ -6,10 +6,15 @@ import Sum from "./components/pages/Sum";
 import Multiply from "./components/pages/Multiply";
 import Prime from "./components/pages/Prime";
 import Fibonacci from "./components/pages/Fibo";
+import Wecan from "./assets/wecan.png";
 import "./App.scss";
 
 const App = () => (
   <div className="App">
+    <h1>
+      <img alt="wecan" src={Wecan} />
+      WECAN
+    </h1>
     <Router>
       <Route path="/" pageComponent={<Home />} />
       <Route path="/sum" pageComponent={<Sum />} />
