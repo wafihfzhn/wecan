@@ -1,6 +1,7 @@
 import React from "react";
-import { Router } from "@reach/router";
-import Route from "./components/Route";
+// import { Router } from "@reach/router";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+// import Route from "./components/Route";
 import Home from "./components/pages/Home";
 import Sum from "./components/pages/Sum";
 import Multiply from "./components/pages/Multiply";
@@ -15,9 +16,11 @@ const App = () => (
       <img alt="wecan" src={Wecan} />
       WECAN
     </h1>
+    <Home />
     <Router>
-      <Route path="/" pageComponent={<Home />} />
-      <Route path="/sum" pageComponent={<Sum />} />
+      <Route path="/sum">
+        <Sum />
+      </Route>
       <Route path="/multiply" pageComponent={<Multiply />} />
       <Route path="/prime" pageComponent={<Prime />} />
       <Route path="/fibonacci" pageComponent={<Fibonacci />} />
