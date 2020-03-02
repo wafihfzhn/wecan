@@ -1,0 +1,12 @@
+version: '3'
+services:
+  wecan:
+    container_name: wecan
+    build:
+      context: ./
+    command: yarn start
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      NODE_ENV: development
