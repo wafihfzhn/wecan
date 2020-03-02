@@ -16,7 +16,6 @@ before-script:
   - "npm i -g parcel-bundler"
   - "npm i node-sass"
   - "npm i"
-
 script:
   - "npm run test"
 after_success:
