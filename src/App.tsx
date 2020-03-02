@@ -1,5 +1,5 @@
 import React from "react";
-import { Router } from "@reach/router";
+import { Redirect, Router } from "@reach/router";
 import Route from "./components/Route";
 import Home from "./components/pages/Home";
 import Sum from "./components/pages/Sum";
@@ -16,6 +16,7 @@ const App = () => (
       WECAN
     </h1>
     <Router>
+      <Route path="/" pageComponent={<Home />} />
       <Route path="/wecan" pageComponent={<Home />} />
       <Route path="/wecan/sum" pageComponent={<Sum />} />
       <Route path="/wecan/multiply" pageComponent={<Multiply />} />
