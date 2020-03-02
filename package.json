@@ -2,7 +2,7 @@
   "name": "wecan",
   "version": "0.1.0",
   "private": true,
-  "homepage":"muslih.github.io",
+  "homepage":"https://muslih.github.io",
   "dependencies": {
     "@reach/router": "^1.3.3",
     "@types/node": "^12.0.0",
