@@ -10,8 +10,10 @@ const isPrime = (num: number): boolean => {
 const primeFactors = (n: number): number[] => {
   const primeResult = [];
   for (let i: number = 2; i <= n; ++i) {
-    isPrime(i) && primeResult.push(i);
-    console.log(i);
+    while (primeResult.length < n) {
+      isPrime(i) && primeResult.push(i);
+      i++;
+    }
   }
 
   return primeResult;

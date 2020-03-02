@@ -4,11 +4,10 @@ const fibonacciSequence = (n: number) => {
   let firstNum = 0,
     secNum = 1;
 
-  for (var i = 0; i <= n; i++) {
+  for (var i = 0; i < n; i++) {
     const temp = firstNum;
     firstNum = secNum;
     secNum = temp + secNum;
-
     result.push(temp);
   }
 
