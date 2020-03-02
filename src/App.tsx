@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Router } from "@reach/router";
+import { Router } from "@reach/router";
 import Route from "./components/Route";
 import Home from "./components/pages/Home";
 import Sum from "./components/pages/Sum";
