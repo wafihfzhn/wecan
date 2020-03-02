@@ -31,8 +31,8 @@ const Multiply = () => {
 
   return (
     <div className="Sum">
-      <h1>Sum X & Y</h1>
-      <p> In this page, you will Sum X & Y, and print the result</p>
+      <h1>Multiply X & Y</h1>
+      <p> In this page, you will Multiply X & Y, and print the result</p>
       <SumForm />
       Result: {result}
     </div>
