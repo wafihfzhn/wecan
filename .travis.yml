@@ -1,0 +1,32 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+    - node_modules
+
+before-script:
+  - "npm i -g parcel-bundler"
+  - "npm i node-sass"
+  - "npm i"
+
+script:
+  - "npm run test"
+after_success:
+  - "npm run deploy"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master
+  repo: muslih/wecan
+  target_branch: gh-pages
